@@ -4,11 +4,15 @@ public class Main {
         int boarHeight = 600;
         int boardWidth = boarHeight;
 
-JFrame frame = new JFrame("Snake");
-frame.setVisible(true);
-frame.setSize(boardWidth,boarHeight);
-frame.setLocationRelativeTo(null);
-frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame frame = new JFrame("Snake");
+        frame.setVisible(true);
+        frame.setSize(boardWidth,boarHeight);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        SnakeGame snakeGame  = new SnakeGame(boardWidth,boarHeight);
+        frame.add(snakeGame);
+        frame.pack();
 
     }
 }
